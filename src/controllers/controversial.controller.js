@@ -31,9 +31,9 @@ export const vote = async (req, res) => {
     } else if (voteStatus === "negative") {
       controversial.votes.negative += 1;
     }
-    controversial.lastUpdated = new Date();
+    // controversial.lastUpdated = new Date();
     controversial.save();
-    res.status(200).json({ message: `Controversial with id ${id} voted` });
+    res.status(200).json({ message: `Controversial with id ${id} voted`, data: controversial });
   } catch (e) {
     throw new Error(e.message);
   }
