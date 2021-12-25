@@ -4,6 +4,10 @@
   "description": "Zemoga UI Test - Server - Marco Useche",
   "main": "index.js",
   "scripts": {
+    "dev": "nodemon src/index.js --exec babel-node",
+    "start": "node build/index.js",
+    "postinstall": "npm run build",
+    "build": "babel src --out-dir build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
