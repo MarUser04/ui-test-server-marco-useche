@@ -1,4 +1,5 @@
 import express from "express";
+import regeneratorRuntime from "regenerator-runtime";
 import cors from "cors";
 import "dotenv/config";
 import morgan from "morgan";
