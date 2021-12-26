@@ -6,6 +6,7 @@ import morgan from "morgan";
 
 //Databases connection
 import "./database";
+
 //Routes
 import controversialRoutes from "./routes/controversial.routes";
 
